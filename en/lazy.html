@@ -1,0 +1,664 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Lazy loading Routes | vue-router documentation npm package</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./pipeline/index.html" />
+    
+    
+    <link rel="prev" href="./link.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="9"
+        data-chapter-title="Lazy loading Routes"
+        data-filepath="lazy.md"
+        data-basepath="."
+        data-revision="Tue Mar 08 2016 03:20:39 GMT-0500 (EST)"
+        data-innerlanguage="en">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="basic.html">
+            
+                
+                    <a href="./basic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Basic Usage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="nested.html">
+            
+                
+                    <a href="./nested.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Nested Routes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="route.html">
+            
+                
+                    <a href="./route.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Route Object &amp; Route Matching
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="named.html">
+            
+                
+                    <a href="./named.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Named Routes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="options.html">
+            
+                
+                    <a href="./options.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Router Options
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="view.html">
+            
+                
+                    <a href="./view.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        router-view
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="link.html">
+            
+                
+                    <a href="./link.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        v-link
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="9" data-path="lazy.html">
+            
+                
+                    <a href="./lazy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Lazy loading Routes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="pipeline/index.html">
+            
+                
+                    <a href="./pipeline/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Transition Pipeline
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="pipeline/hooks.html">
+            
+                
+                    <a href="./pipeline/hooks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Transition Hooks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="pipeline/data.html">
+            
+                
+                    <a href="./pipeline/data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="pipeline/activate.html">
+            
+                
+                    <a href="./pipeline/activate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        activate
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="pipeline/deactivate.html">
+            
+                
+                    <a href="./pipeline/deactivate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        deactivate
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="pipeline/can-activate.html">
+            
+                
+                    <a href="./pipeline/can-activate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        canActivate
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="pipeline/can-deactivate.html">
+            
+                
+                    <a href="./pipeline/can-deactivate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        canDeactivate
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="pipeline/can-reuse.html">
+            
+                
+                    <a href="./pipeline/can-reuse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.7.</b>
+                        
+                        canReuse
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="api/index.html">
+            
+                
+                    <a href="./api/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        API Reference
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="api/properties.html">
+            
+                
+                    <a href="./api/properties.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Router instance properties
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="api/start.html">
+            
+                
+                    <a href="./api/start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        router.start
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="api/stop.html">
+            
+                
+                    <a href="./api/stop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        router.stop
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="api/map.html">
+            
+                
+                    <a href="./api/map.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        router.map
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="api/on.html">
+            
+                
+                    <a href="./api/on.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        router.on
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="api/go.html">
+            
+                
+                    <a href="./api/go.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.6.</b>
+                        
+                        router.go
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.7" data-path="api/replace.html">
+            
+                
+                    <a href="./api/replace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.7.</b>
+                        
+                        router.replace
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.8" data-path="api/redirect.html">
+            
+                
+                    <a href="./api/redirect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.8.</b>
+                        
+                        router.redirect
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.9" data-path="api/alias.html">
+            
+                
+                    <a href="./api/alias.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.9.</b>
+                        
+                        router.alias
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.10" data-path="api/before-each.html">
+            
+                
+                    <a href="./api/before-each.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.10.</b>
+                        
+                        router.beforeEach
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.11" data-path="api/after-each.html">
+            
+                
+                    <a href="./api/after-each.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.11.</b>
+                        
+                        router.afterEach
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >vue-router documentation npm package</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="lazy-loading-routes">Lazy Loading Routes</h1>
+<p>When you are using bundlers like Webpack or Browserify, it&apos;s trivially easy to lazy-load a route component using Vue.js&apos; built-in <a href="http://vuejs.org/guide/components.html#Async_Components" target="_blank">async component functionality</a>. Instead of directly defining your route component, you define it as a function that will asynchronously resolve the actual component definition:</p>
+<pre><code class="lang-js">router.map({
+  <span class="hljs-string">&apos;/async&apos;</span>: {
+    component: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve</span>) </span>{
+      <span class="hljs-comment">// somehow retrieve your component definition from server...</span>
+      resolve(MyComponent)
+    }
+  }
+})
+</code></pre>
+<p>Now, manually handling component retrieval is less than ideal, but bundlers like Webpack &amp; Browserify both provides ways to make it easier.</p>
+<h3 id="webpack">Webpack</h3>
+<p>Webpack has built-in support for async code-splitting. You can use the AMD-like <code>require</code> syntax in your code to indicate an async code-split point:</p>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>([<span class="hljs-string">&apos;./MyComponent.vue&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">MyComponent</span>) </span>{
+  <span class="hljs-comment">// code here runs after MyComponent.vue is asynchronously loaded.</span>
+})
+</code></pre>
+<p>Combined with the router it can simply look like this:</p>
+<pre><code class="lang-js">router.map({
+  <span class="hljs-string">&apos;/async&apos;</span>: {
+    component: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve</span>) </span>{
+      <span class="hljs-built_in">require</span>([<span class="hljs-string">&apos;./MyComponent.vue&apos;</span>], resolve)
+    }
+  }
+})
+</code></pre>
+<p>Now, <code>MyComponent.vue</code>, along with any dependencies that is only used by itself, will be loaded asynchronously only when the route <code>/async</code> needs to be rendered.</p>
+<h3 id="browserify">Browserify</h3>
+<p>It&apos;s a bit more tricky to achieve the same with Browserify, but it&apos;s possible with the <a href="https://github.com/substack/browserify-handbook/blob/master/readme.markdown#partition-bundle" target="_blank"><code>partition-bundle</code> plugin</a>. You will have to manually declare your bundle mappings in a <code>json</code> file:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;main.js&quot;</span>: [<span class="hljs-string">&quot;./main.js&quot;</span>],
+  <span class="hljs-string">&quot;my-component.js&quot;</span>: [<span class="hljs-string">&quot;./MyComponent.vue&quot;</span>]
+}
+</code></pre>
+<p>Then in <code>main.js</code> you would do something similar, using the <code>loadjs</code> function instead of <code>require</code>:</p>
+<pre><code class="lang-js">router.map({
+  <span class="hljs-string">&apos;/async&apos;</span>: {
+    component: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve</span>) </span>{
+      loadjs([<span class="hljs-string">&apos;./MyComponent.vue&apos;</span>], resolve)
+    }
+  }
+})
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./link.html" class="navigation navigation-prev " aria-label="Previous page: v-link"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./pipeline/index.html" class="navigation navigation-next " aria-label="Next page: Transition Pipeline"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vue-router/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vue-router/"},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
